@@ -1,0 +1,7 @@
+$red: #FF0000;
+
+$theme-colors: (
+    "red": $red
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
