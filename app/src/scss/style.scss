@@ -5,3 +5,51 @@ $theme-colors: (
 );
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
+/*Reset Decoration*/
+a {
+	text-decoration: none;
+}
+
+/**
+ * Remove list-style
+ */ 
+
+ol, ul {
+	list-style: none;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul {
+	font-size: 1em;
+	font-weight: normal;
+}
+/*Style Decoration*/
+body{
+   font-family: Georgia, 'Times New Roman', Times, serif; 
+  
+}
+h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.logo{
+    margin-top: 5px;
+    width: 100px;
+    
+}
+/*SMARTPHONE Responsive*/
+@media only screen and (max-width: 787px){
+    .logo{
+        width: 80px;
+    }
+    .display-1{
+        font-size: 60px;
+    }
+}
