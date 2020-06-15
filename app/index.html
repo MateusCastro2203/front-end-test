@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lottaleben test</title>
 </head>
-<body>
+<body onload="getRequest()">
     <header>
         <div class="container">
             <a href="https://www.lottaleben.de/" target="blanc">
@@ -13,27 +13,33 @@
         </a>
         </div>
     </header>
+    
+
     <section class="container-fluid">
-        <div class=" vh-10 bg-light container  justify-content-center align-items-center">
+        <div class=" vh-10 bg-light justify-content-center align-items-center">
             <h1 class="text-center events">Events</h1>
         </div>
     </section>
-
-    <section>
-        <article>
-            <button class="btn btn-outline-dark">Click me</button>
-        </article>
-    </section>
-
-    <div class="container-fluid">
-        <div class="row bg-light">
-            <div class="values">
-
+    <br>
+    <div id="date">
+        <div class="container">
+            <div class="row">
+                <div class='col-md-6 offset-md-3'>
+                    <div class="form-group">
+                        <div class='input-group date'>
+                            <input type='date' class="form-control" id="datetimepicker1"/>
+                            <button class="btn btn-outline-dark" onclick="datePicker()" > Filter</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!--Modal-->
-   
+    <section id="events">
+    </section>
+
+    
+    <script defer src="./src/js/index.js"></script>
 </body>
 </html>
